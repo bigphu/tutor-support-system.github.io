@@ -1,4 +1,6 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
+
 import './Navbar.css'
 
 import logo from '../../assets/logo.png'
@@ -7,51 +9,41 @@ import profileIcon from '../../assets/profile-icon.svg'
 
 const Navbar = () => {
   return (
-    <nav className="navbar-wrapper"> 
+    <nav className='navbar-wrapper'> 
       {/* LEFT SIDE */}
-      <div className="navbar-left">
-        <a href="/">
+      <div className='navbar-left'>
+        <NavLink to='/' className='navbar-icon-home'>
           <img src={logo} 
-          alt="Logo" 
-          className="navbar-logo" />
-        </a>
+          alt='Logo' 
+          className='navbar-logo' />
+        </NavLink>
 
-        <div className="navbar-links">
-          <CustomLink href="/">Home</CustomLink>
-          <CustomLink href="/dashboard">Dashboard</CustomLink>
-          <CustomLink href="/mylinks">My Links</CustomLink>
-          <CustomLink href="/discovery">Discovery</CustomLink>
+        <div className='navbar-links'>
+          <NavLink to='/' className='navbar-link-home'>Home</NavLink>
+          <NavLink to='/dashboard' className='navbar-link-dashboard'>Dashboard</NavLink>
+          <NavLink to='/mylinks' className='navbar-link-mylinks'>My Links</NavLink>
+          <NavLink to='/discovery' className='navbar-link-discovery'>Discovery</NavLink>
         </div>
       </div>
 
       {/* RIGHT SIDE */}
-      <div className="navbar-right">
+      <div className='navbar-right'>
         <img
           src={notificationIcon}
-          alt="Notifications"
-          className="navbar-notification-icon"
+          alt='Notifications'
+          className='navbar-notification-icon'
         />
         
-        <a href="/profile">
+        <NavLink to='/profile'>
           <img
             src={profileIcon}
-            alt="User Profile"
-            className="navbar-profile-icon"
+            alt='User Profile'
+            className='navbar-profile-icon'
           />
-        </a>
+        </NavLink>
       </div>
     </nav>
   )
-}
-
-function CustomLink({href, children, ...props}) {
-  const PATH = window.location.pathname;
-
-  if (PATH === href) {
-    return <a href={href} className="active" {...props}>{children}</a>
-  } else {
-    return <a href={href} {...props}>{children}</a>
-  }
 }
 
 export default Navbar
