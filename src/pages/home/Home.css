@@ -1,0 +1,51 @@
+.home-container {
+  position: relative; /* important */
+  height: calc(100vh - 60px);
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-container img {
+  height: 100%;
+  width: 50%;
+  z-index: 9;
+}
+
+.home-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* or space-around if you want spacing */
+  align-items: flex-start;
+  height: 100%;
+  gap: 24px; /* spacing between title and description */
+  padding-top: 16vh; /* optional to push content down */
+  padding-left: 28vh;
+  text-align: left;
+}
+
+.home-text-container .page-title {
+  color: var(--color-primary-accent);
+  font-family: "Outfit", sans-serif;
+  font-size: 88px;
+  font-weight: 800;
+  line-height: 116%;
+}
+
+.home-text-container .page-description {
+  color: var(--color-secondary-accent);
+  width: 325px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%;
+  font-family: "Roboto", sans-serif;
+}
+
+.home-button-container {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  gap: 16px;
+}

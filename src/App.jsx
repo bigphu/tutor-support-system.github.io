@@ -1,19 +1,25 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 import Navbar from './components/nav-bar/Navbar.jsx';
+import Background from './components/background/Background.jsx';
+import Footer from './components/footer/Footer.jsx';
 
-import Home from './pages/Home.jsx';
-import Dashboard from './pages/Dashboard.jsx';
-import MyLinks from './pages/MyLinks.jsx';
-import Discovery from './pages/Discovery.jsx';
-import Profile from './pages/Profile.jsx';
+import Home from './pages/home/Home.jsx';
+import Dashboard from './pages/dashboard/Dashboard.jsx';
+import MyLinks from './pages/my-links/MyLinks.jsx';
+import Discovery from './pages/discovery/Discovery.jsx';
+import Profile from './pages/profile/Profile.jsx';
+
+import './App.css';
 
 const App = () => {
   return (
-    <div type='module'>
+    <div className='App' type='module'>
       <Navbar />
-
+      {useLocation().pathname !== '/' && <Background />}
+      
       <div className='spacer-navbar'>
         <Routes>
           <Route path='/' element={<Home />} />
@@ -24,6 +30,8 @@ const App = () => {
           <Route path='*' element={<div>404 Not Found</div>} />
         </Routes>   
       </div>
+
+      <Footer />
     </div>
   )
 }

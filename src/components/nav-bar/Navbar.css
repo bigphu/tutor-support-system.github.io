@@ -71,17 +71,17 @@
   gap: 1rem;
   
   height: 100%;
-  width: 6%;
+  width: 5%;
 }
 
 .navbar-notification-icon {
-  height: 22px;
+  height: 20px;
 
   cursor: pointer;
 }
 
 .navbar-profile-icon {
-  height: 32px;
+  height: 30px;
   
   cursor: pointer;
 }
