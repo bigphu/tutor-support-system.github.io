@@ -1,22 +1,23 @@
-.background-image {
+.background-container {
+  width: 100%;
+  height: 100%;
+}
+
+.background-image, .background-overlay {
   position: fixed;
-  top: 60px;             /* Push it below the navbar */
+  width: 100%;
+  height: 100%;
+}
+
+.background-image {
   z-index: -2;           /* Keep it behind other content */
 
-  left: 0;
-  width: 100%;
-  height: calc(100% - 60px);
   object-fit: cover;     /* Looks better than stretch */
 }
 
 .background-overlay {
-  position: fixed;
-  top: 60px;             /* Push it below the navbar */
-  left: 0;
   z-index: -1;           /* Keep it behind other content */
 
-  width: 100%;
-  height: calc(100% - 60px);
   background-color: var(--color-background); /* Semi-transparent overlay */
   opacity: 0.7;
 }

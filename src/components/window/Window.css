@@ -1,0 +1,28 @@
+.window {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  min-height: 25vh;
+
+  border: 2px solid var(--color-secondary-accent);
+  border-radius: 15px;
+
+  background-color: var(--color-surface);
+}
+
+.window .window-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 20vh;
+  width: 80%;
+}
+
+.window .window-title p {
+  text-wrap: balance;
+}

@@ -6,8 +6,8 @@ import './Footer.css'
 
 const Footer = () => {
   return (
-    <div className='footer'>
-      <p>
+    <div className='footer-container'>
+      <p className='text-small text-light'>
         This website is developed by 
       </p>
       <a href='https://github.com/bigphu' target='_blank' rel='noreferrer'>

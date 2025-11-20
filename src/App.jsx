@@ -17,21 +17,24 @@ import './App.css';
 const App = () => {
   return (
     <div className='App' type='module'>
-      <Navbar />
-      {useLocation().pathname !== '/' && <Background />}
-      
-      <div className='spacer-navbar'>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/dashboard' element={<Dashboard />} />
-          <Route path='/mylinks' element={<MyLinks />} />
-          <Route path='/discovery' element={<Discovery />} />
-          <Route path='/profile' element={<Profile />} />
-          <Route path='*' element={<div>404 Not Found</div>} />
-        </Routes>   
-      </div>
+      <div className='main row'>
+        <Navbar />  
 
-      <Footer />
+        {useLocation().pathname !== '/' && <Background />}
+
+        <div className='content-container grid'>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/dashboard' element={<Dashboard />} />
+            <Route path='/mylinks' element={<MyLinks />} />
+            <Route path='/discovery' element={<Discovery />} />
+            <Route path='/profile' element={<Profile />} />
+            <Route path='*' element={<div>404 Not Found</div>} />
+          </Routes>   
+        </div>
+
+        <Footer />
+      </div>
     </div>
   )
 }

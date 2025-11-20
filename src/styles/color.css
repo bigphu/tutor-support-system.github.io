@@ -1,0 +1,30 @@
+:root {
+  /* ---------------------------------------
+   * Brand Colors
+   * ------------------------------------- */
+  --color-primary: #0b1b43;
+  --color-primary-accent: #032b91;
+  --color-secondary-accent: #1488d8;
+
+  /* ---------------------------------------
+   * Background / Surface
+   * ------------------------------------- */
+  --color-background: #cad3d9;
+  --color-surface: #ffffff;
+
+  /* ---------------------------------------
+   * Borders / Lines / Dividers
+   * ------------------------------------- */
+  --color-border: #1488d8;
+
+  /* ---------------------------------------
+   * Optional: Interactive States
+   * ------------------------------------- */
+  --color-primary-hover: #0f264f;
+  --color-primary-active: #07142e;
+
+  /* ---------------------------------------
+   * Optional: Transparency
+   * ------------------------------------- */
+  --color-primary-transparent: rgba(11, 27, 67, 0.4);
+}

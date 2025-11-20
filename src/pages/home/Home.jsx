@@ -8,26 +8,26 @@ import background from '../../assets/home-background.png';
 const Home = () => {
   return (
     <div className='home-container'>
-      <div className='home-text-container'>
-        <span className='page-title'>
-          <span>TUTOR</span>
-          <br></br>
-          <span>SUPPORT</span>
-          <br></br>
-          <span>SYSTEM</span>
+      <div className='left-filler large-2 medium-2 small-0'></div>
+
+      <div className='text-container large-5 medium-5 small-12'>
+        <span className='page-title text-hero text-primary'>
+          TUTOR
+          SUPPORT
+          SYSTEM
         </span>
 
-        <span className='page-description'>
+        <span className='page-description text-small text-accent'>
           Participate in an optimized digital peer tutoring and academic support program
         </span>
 
-        <div className='home-button-container'> 
+        <div className='button-container'> 
           <Button type='default'>Register</Button>
           <Button type='ghost'>Learn more</Button>
         </div>
       </div>
 
-      <img src={background} alt="Home Background" />
+      <img className='large-5 medium-5 small-0' src={background} alt="Home Background" />
 
     </div>
   )

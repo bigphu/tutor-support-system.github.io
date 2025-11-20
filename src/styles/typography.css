@@ -1,0 +1,60 @@
+/* ===== COLORS ===== */
+:root {
+  --text-primary: #032b91;
+  --text-accent: #1488d8;
+  --text-placeholder: #cad3d9;
+  --text-dark: #33363f;
+  --text-light: #ffffff;
+}
+
+/* ===== SIZE PRESETS ===== */
+
+.text-small {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 500;
+}
+
+.text-medium {
+  font-family: "Outfit", sans-serif;
+  font-size: 22.4px;
+  line-height: 150%;
+  font-weight: 600;
+}
+
+.text-big {
+  font-family: "Outfit", sans-serif;
+  font-size: 57px;
+  line-height: 116%;
+  font-weight: 800;
+}
+
+.text-hero {
+  font-family: "Outfit", sans-serif;
+  font-size: 91px;
+  line-height: 116%;
+  font-weight: 800;
+}
+
+/* ===== COLOR UTILITY CLASSES ===== */
+
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-accent {
+  color: var(--text-accent);
+}
+
+.text-placeholder {
+  color: var(--text-placeholder);
+}
+
+.text-dark {
+  color: var(--text-dark);
+}
+
+.text-light {
+  color: var(--text-light);
+}

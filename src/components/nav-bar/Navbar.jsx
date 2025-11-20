@@ -9,7 +9,7 @@ import profileIcon from '../../assets/profile-icon.svg'
 
 const Navbar = () => {
   return (
-    <nav className='navbar-wrapper'> 
+    <nav className='navbar-container'> 
       {/* LEFT SIDE */}
       <div className='navbar-left'>
         <NavLink to='/' className='navbar-icon-home'>
@@ -19,10 +19,10 @@ const Navbar = () => {
         </NavLink>
 
         <div className='navbar-links'>
-          <NavLink to='/' className='navbar-link-home'>Home</NavLink>
-          <NavLink to='/dashboard' className='navbar-link-dashboard'>Dashboard</NavLink>
-          <NavLink to='/mylinks' className='navbar-link-mylinks'>My Links</NavLink>
-          <NavLink to='/discovery' className='navbar-link-discovery'>Discovery</NavLink>
+          <NavLink to='/' className='text-small text-light'>Home</NavLink>
+          <NavLink to='/dashboard' className='text-small text-light'>Dashboard</NavLink>
+          <NavLink to='/mylinks' className='text-small text-light'>My Links</NavLink>
+          <NavLink to='/discovery' className='text-small text-light'>Discovery</NavLink>
         </div>
       </div>
 

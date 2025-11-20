@@ -6,14 +6,14 @@ import background from '../../assets/background.jpg'
 
 const Background = () => {
   return (
-    <div>
+    <div className='background-container'>
       <img  
         src={background}
         alt='Background'
-        className='background-image'
+        className='background-image large-12 medium-12 small-12'
       />
 
-      <div className='background-overlay'></div>
+      <div className='background-overlay large-12 medium-12 small-12'></div>
     </div>
   )
 }

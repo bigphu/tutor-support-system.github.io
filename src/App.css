@@ -1,10 +1,9 @@
-.App {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
+.main {
+  width: 100%;
   min-height: 100vh;
 }
 
-.spacer-navbar {
-  margin-top: 60px; /* match navbar height */
+.content-container {
+  width: 100%;
+  min-height: 90vh;
 }
