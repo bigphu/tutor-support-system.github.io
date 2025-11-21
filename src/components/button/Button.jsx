@@ -2,7 +2,7 @@ import React from 'react'
 
 import './Button.css';
 
-const Button = ({ type, text, ...props }) => {
+const Button = ({ type, text, onClick, ...props }) => {
   // Decide the class based on the 'type' prop
   let className = 'text-small text-bold large-3 medium-3 small-3';
 
@@ -13,7 +13,7 @@ const Button = ({ type, text, ...props }) => {
   }
 
   return (
-    <button className={className} {...props}>
+    <button className={className} onClick={onClick} {...props}>
       {text}
     </button>
   );
