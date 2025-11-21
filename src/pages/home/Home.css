@@ -3,16 +3,20 @@
   width: 100%;
 
   display: flex;
-  align-items: center;
+  align-content: center;
 }
 
 .left-filler {
-  background: transparent
+  height: 100%;
+  /* background-color: cyan; */
 }
 
 .text-container {
+  height: 100%;
+  /* background-color: red; */
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: space-between;
   gap: 20px;
 }
@@ -24,7 +28,8 @@
 }
 
 .home-container img {
-  width: 100%;
+  /* background-color: green; */
+  /* width: 100%; */
   height: 100%;
   display: flex;
   justify-content: center;   /* căn giữa ngang */

@@ -20,7 +20,7 @@ const App = () => {
       <div className='main row'>
         <Navbar />  
 
-        {useLocation().pathname !== '/' && <Background />}
+        {/* {useLocation().pathname !== '/' && <Background />} */}
 
         <div className='content-container grid'>
           <Routes>

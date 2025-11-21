@@ -12,29 +12,21 @@
 .text-small {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  line-height: 150%;
-  font-weight: 500;
 }
 
 .text-medium {
   font-family: "Outfit", sans-serif;
   font-size: 22.4px;
-  line-height: 150%;
-  font-weight: 600;
 }
 
 .text-big {
   font-family: "Outfit", sans-serif;
   font-size: 57px;
-  line-height: 116%;
-  font-weight: 800;
 }
 
 .text-hero {
   font-family: "Outfit", sans-serif;
   font-size: 91px;
-  line-height: 116%;
-  font-weight: 800;
 }
 
 /* ===== COLOR UTILITY CLASSES ===== */
@@ -57,4 +49,19 @@
 
 .text-light {
   color: var(--text-light);
+}
+
+.text-normal {
+  line-height: 150%;
+  font-weight: 500;
+}
+
+.text-bold {
+  line-height: 150%;
+  font-weight: 600;
+}
+
+.text-extra-bold {
+  line-height: 116%;
+  font-weight: 800;
 }

@@ -7,7 +7,7 @@ import './Footer.css'
 const Footer = () => {
   return (
     <div className='footer-container'>
-      <p className='text-small text-light'>
+      <p className='text-small text-light text-bold'>
         This website is developed by 
       </p>
       <a href='https://github.com/bigphu' target='_blank' rel='noreferrer'>

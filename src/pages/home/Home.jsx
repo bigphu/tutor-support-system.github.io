@@ -11,19 +11,19 @@ const Home = () => {
       <div className='left-filler large-2 medium-2 small-0'></div>
 
       <div className='text-container large-5 medium-5 small-12'>
-        <span className='page-title text-hero text-primary'>
+        <span className='page-title text-hero text-primary text-extra-bold'>
           TUTOR
           SUPPORT
           SYSTEM
         </span>
 
-        <span className='page-description text-small text-accent'>
+        <span className='page-description text-small text-accent text-normal'>
           Participate in an optimized digital peer tutoring and academic support program
         </span>
 
         <div className='button-container'> 
-          <Button type='default'>Register</Button>
-          <Button type='ghost'>Learn more</Button>
+          <Button type='default' text='Register' />
+          <Button type='ghost' text='Learn more' />
         </div>
       </div>
 

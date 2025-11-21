@@ -5,12 +5,12 @@ import './Window.css';
 const Window = ({title, children, ...props}) => {
   return (
     <div className='window row' {...props}>
-        <div className='window-title text-big text-primary'>
-          <p>{title}</p>
+        <div className='window-title text-big text-primary text-bold'>
+          {title}
         </div> 
 
         <div>
-          <p>lskjmfae;ljfpoqwfpowe0ipof</p>
+          {children}
         </div> 
         
     </div>

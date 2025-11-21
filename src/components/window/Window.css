@@ -1,28 +1,25 @@
 .window {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 
   width: 100%;
-  min-height: 25vh;
+  min-height: 5vh;
 
   border: 2px solid var(--color-secondary-accent);
-  border-radius: 15px;
+  border-radius: 20px;
 
   background-color: var(--color-surface);
 }
 
-.window .window-title {
-  display: flex;
-  flex-direction: row;
+.window-title {
+  display: flex;  
   justify-content: center;
+  align-content: center;
   align-items: center;
-
-  min-height: 20vh;
-  width: 80%;
-}
-
-.window .window-title p {
-  text-wrap: balance;
+  
+  min-height: 100%;
+  width: 90%;
+  height: auto;
 }

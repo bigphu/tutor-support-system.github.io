@@ -8,12 +8,16 @@ const MyLinks = () => {
   return (
     <div className='my-links-containter'>
       <div className='left-filler large-2 medium-1 small-0'></div>
-      <div className='main-content large-8 medium-10 small-12'>
-        <div className='top-filler'></div>
+      <div className='middle large-8 medium-10 small-12'>
+        <div className='top-filler large-12 medium-12 small-12'></div>
 
-        <Window title='Links center'></Window>
+        <div className='main-content large-12 medium-12 small-12'>      
+          <Window title='Links center'></Window>
+          <Window></Window>
         
-        <div className='bottom-filler'></div>
+        </div>
+
+        <div className='bottom-filler large-12 medium-12 small-12'></div>
       </div>
       <div className='right-filler large-2 medium-1 small-0'></div>
     </div>
