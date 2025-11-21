@@ -11,6 +11,7 @@ import Dashboard from './pages/dashboard/Dashboard.jsx';
 import MyLinks from './pages/my-links/MyLinks.jsx';
 import Discovery from './pages/discovery/Discovery.jsx';
 import Profile from './pages/profile/Profile.jsx';
+import Page404 from './pages/page-404/Page404.jsx';
 
 import './App.css';
 
@@ -18,7 +19,7 @@ const App = () => {
   return (
     <div className='App' type='module'>
       <div className='main row'>
-        <Navbar />  
+        {useLocation().pathname !== '/404' && <Navbar /> }
 
         {/* {useLocation().pathname !== '/' && <Background />} */}
 
@@ -29,7 +30,7 @@ const App = () => {
             <Route path='/mylinks' element={<MyLinks />} />
             <Route path='/discovery' element={<Discovery />} />
             <Route path='/profile' element={<Profile />} />
-            <Route path='*' element={<div>404 Not Found</div>} />
+            <Route path='/404' element={<Page404/>} />
           </Routes>   
         </div>
 
