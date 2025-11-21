@@ -1,10 +1,14 @@
 import React from 'react'
 
+import PageLayout from '../../components/page-layout/PageLayout'
+
 const Profile = () => {
   return (
-    <div>
-      <h1>Profile Page</h1>
-    </div>
+    <PageLayout>
+      <div>
+        <h1>Profile Page</h1>
+      </div>
+    </PageLayout>
   )
 }
 
